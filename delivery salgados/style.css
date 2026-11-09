@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+:root{
+    --bg-color: #ffffff;
+    --pri-color: #ff9500;
+    --sec-color: #ff6a00;
+    --txt-color1: #ffffff;
+    --txt-color2: #000000;
+}
+#menu{
+    background-color: var(--pri-color);
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+nav{
+    display: grid;
+    
+    grid-template-columns: repeat(7, auto);
+    width: 100%;
+    place-items: center;
+}
+li{
+    list-style-type: none;
+
+}
+a{
+    text-decoration: none;
+}
+nav>li>a{
+    color: var(--txt-color1);
+    font-weight: 700;
+}
+#cadastrar{
+    color: var(--pri-color);
+    background-color: var(--bg-color);
+    
+    border-radius: 10px;
+    height: 3vh;
+    width: 150%;
+}
+nav>li>a>img{
+    height: 5vh;
+}
+main{
+    background-image: url(imagens_produtos/banner.avif);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(80%);
+}
+main{
+    display: grid;
+    align-items: center
+}
+main>h1{
+    margin: 0;
+    color: #ffffff;
+}
+#destaques{
+    display: grid;
+    justify-items: center;
+    margin: 30px 10% 30px 10%;
+}
+.card{
+    border: 1px solid var(--txt-color2);
+    border-radius: 10px;
+    height: 45vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+#destaques>h2{
+    text-align: center;
+    height: 8vh;
+}
+.img-produto{
+    height: 80%;
+    width: 80%;
+    background-image: url(imagens_produtos/coxinha_frango_catupiry.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+}
+.card h3{
+    font-size: 2.3rem;
+}
+.descricao{
+    font-size: 1.5rem;
+}
+.info-compras{
+    font-size: 1.2rem;
+    align-self: end;
+}
+.btn-adicionar{
+    background-color: var(--sec-color);
+    height: 3vh;
+    width: 20%;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    justify-self: end;
+    align-self: end;
+}
+.btn-adicionar>a{
+    color: var(--txt-color2);
+    font-size: 1.2rem;
+    
+}
+.info{
+    font-weight: 700;
+    display: grid;
+}
+@media screen and (max-width: 767px) {
+    .card{
+        height: 80vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 500%;
+    }
+  }
+  
