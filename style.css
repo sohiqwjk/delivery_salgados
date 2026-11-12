@@ -65,7 +65,8 @@ main>h1{
 #destaques{
     display: grid;
     justify-items: center;
-    margin: 30px 10% 30px 10%;
+    margin: 30px 10% 0 10%;
+    grid-template-rows: repeat(5, 1fr);
 }
 .card{
     border: 1px solid var(--txt-color2);
@@ -82,13 +83,21 @@ main>h1{
 .img-produto{
     height: 80%;
     width: 80%;
-    background-image: url(imagens_produtos/coxinha_frango_catupiry.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
     justify-self: center;
     align-self: center;
+}
+#coxinha{
+    background-image: url(imagens_produtos/coxinha_frango_catupiry.jpg);
+}
+#pastel{
+    background-color: url(imagens_produtos/pastel_carne_desfiado.jpg);
+}
+#pastel{
+    background-color: url(imagens_produtos/risole_presunto.webp);
 }
 .card h3{
     font-size: 2.3rem;
@@ -119,6 +128,11 @@ main>h1{
     font-weight: 700;
     display: grid;
 }
+footer{
+    background-color: var(--pri-color);
+    height: 20vh;
+    color: var(--bg-color);
+}
 @media screen and (max-width: 767px) {
     .card{
         height: 80vh;
@@ -126,4 +140,5 @@ main>h1{
         grid-template-rows: 50% 500%;
     }
   }
+  
   
